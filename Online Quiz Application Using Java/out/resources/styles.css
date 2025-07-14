@@ -1,0 +1,57 @@
+/* Title Label */
+.title-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-padding: 15px 0;
+}
+
+/* Question Label */
+.question-label {
+    -fx-font-size: 18px;
+    -fx-wrap-text: true;
+    -fx-text-fill: #34495e;
+    -fx-padding: 10px 0;
+}
+
+/* Timer Label */
+.timer-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #e67e22;
+    -fx-background-color: #fdf2e9;
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #e67e22;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+/* Score Label */
+.score-label {
+    -fx-font-size: 20px;
+    -fx-text-fill: #2ecc71;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 0;
+}
+
+/* Buttons */
+.button {
+    -fx-font-size: 15px;
+    -fx-padding: 10px 20px;
+    -fx-background-color: #2980b9;
+    -fx-text-fill: white;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.1, 0, 2);
+    -fx-border-width: 0;
+}
+
+/* Button hover effect */
+.button:hover {
+    -fx-background-color: #3498db;
+}
+
+/* Button press effect */
+.button:pressed {
+    -fx-background-color: #1c6692;
+}

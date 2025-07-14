@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="application.QuizScene">
+
+    <top>
+        <!-- FIXED: Removed Insets(10) -->
+        <HBox alignment="CENTER_RIGHT">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Label fx:id="timerLabel" text="⏱ 30s" styleClass="timer-label"/>
+        </HBox>
+    </top>
+
+    <center>
+        <!-- FIXED: Removed padding="40" -->
+        <VBox spacing="20" alignment="CENTER">
+            <padding>
+                <Insets top="40" right="40" bottom="40" left="40"/>
+            </padding>
+
+            <Label fx:id="questionLabel" wrapText="true" styleClass="question-label"/>
+            <VBox spacing="10">
+                <RadioButton fx:id="option1" toggleGroup="$toggleGroup"/>
+                <RadioButton fx:id="option2" toggleGroup="$toggleGroup"/>
+                <RadioButton fx:id="option3" toggleGroup="$toggleGroup"/>
+                <RadioButton fx:id="option4" toggleGroup="$toggleGroup"/>
+            </VBox>
+            <Button fx:id="nextButton" text="Next" onAction="#handleNext" disable="true"/>
+        </VBox>
+    </center>
+</BorderPane>
