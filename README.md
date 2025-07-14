@@ -1,93 +1,115 @@
-# 🎓 Interactive Quiz App in Java (JavaFX)
+# Online Quiz Application Using JAVA
 
-A sleek and interactive quiz platform built using JavaFX, designed with modern UI elements, smooth animations, and all the essential components needed for a full-featured online quiz system including user authentication, real-time scoring, and time-bound quizzes.
-
----
-
-## ✨ Key Functionalities
-
-- 🔐 **User Authentication** with input validation  
-- ❓ **MCQ-Based Quiz Interface**  
-- ⏳ **Timer Functionality** per question or entire quiz  
-- 📈 **Auto Score Computation**  
-- 🧠 **Instant Response Feedback** after each selection  
-- 🔄 **Quiz Restart Capability**  
-- 🎨 **Stylized UI** using CSS animations  
+A modern JavaFX-based Online Quiz Application designed with clean UI/UX, animation effects, and essential features like login, timed quizzes, answer evaluation, and score tracking.
 
 ---
 
-## 🧰 Technologies Stack
+## 📌 Features
 
-- Java 17 or higher  
-- JavaFX 21.0.2  
-- FXML for UI markup  
-- CSS for visual styling and transitions  
-- SceneBuilder (optional)
+- 🔐 User login interface with validation  
+- ❓ Multiple-choice quiz interface  
+- ⏲️ Countdown timer per question or quiz  
+- 📊 Automatic score calculation  
+- 🧠 Instant feedback after each question  
+- 🔁 Option to restart the quiz  
+- 🎨 Polished UI with custom CSS animations
 
 ---
 
-## 📁 Project Layout
+## 🛠️ Technologies Used
 
-/Interactive Quiz App JavaFX
+- **Java 17+**
+- **JavaFX 21.0.2**
+- **FXML** for UI layout
+- **CSS** for design and animation
+- **SceneBuilder** (optional)
+
+---
+
+## 🗂️ Project Structure
+
+```
+/Online Quiz Application Using Java
 ├── .vscode/
-│ ├── java-formatter.xml
-│ ├── launch.json
-│ └── settings.json
+│   ├── java-formatter.xml
+│   ├── launch.json
+│   └── settings.json
 │
 ├── application/
-│ ├── Main.java
-│ ├── LoginScene.fxml
-│ ├── LoginScene.java
-│ ├── QuizScene.fxml
-│ ├── QuizScene.java
-│ ├── ResultScene.fxml
-│ └── ResultScene.java
+│   ├── LoginScene.fxml
+│   ├── LoginScene.java
+│   ├── Main.java
+│   ├── QuizScene.fxml
+│   ├── QuizScene.java
+│   ├── ResultScene.fxml
+│   └── ResultScene.java
 │
 ├── model/
-│ ├── Question.java
-│ └── UserSession.java
+│   ├── Question.java
+│   └── UserSession.java
 │
 ├── out/
-│ ├── application/
-│ ├── model/
-│ ├── resources/
-│ └── util/
+│   ├── application/
+│   ├── model/
+│   ├── resources/
+│   └── util/
 │
 ├── resources/
-│ └── styles.css
+│   └── styles.css
 │
 ├── util/
-│ └── QuestionBank.java
+│   └── QuestionBank.java
 │
 ├── README.md
 └── run.bat
-
+```
 
 ---
 
-## 🛠️ Compile & Run Instructions
+## 🚀 How to Compile & Run
 
-### ✅ Step 1: Compile the Project
+### ✅ 1. Compile
 
+```bash
 javac --module-path "C:\javafx-sdk-21.0.2\lib" --add-modules javafx.controls,javafx.fxml -d out application\*.java model\*.java util\*.java
+```
 
-### ✅ Step 2: Launch the Application
+### ✅ 2. Run
+
+```bash
 java --module-path "C:\javafx-sdk-21.0.2\lib" --add-modules javafx.controls,javafx.fxml -cp out application.Main
+```
 
-⚠️ Make sure the JavaFX SDK is installed properly and the path matches your environment setup.
+> ⚠️ Ensure JavaFX SDK is properly installed and the path is correctly set in the above commands.
 
-⚙️ Quick Start with run.bat
-Instead of manually compiling and running every time, use the provided batch file.
+---
 
-📂 run.bat Contents
+### ✅ Option 2: Use the `run.bat` File (Recommended)
+
+Just double-click `run.bat` (or run it in terminal):
+
+```bash
+run.bat
+```
+
+Make sure to update the JavaFX path if it's different in your system.
+
+---
+
+## 📂 `run.bat` Contents
+
+```bat
 @echo off
 set FX_PATH=C:\javafx-sdk-21.0.2\lib
 javac --module-path "%FX_PATH%" --add-modules javafx.controls,javafx.fxml -d out application\*.java
 java --module-path "%FX_PATH%" --add-modules javafx.controls,javafx.fxml -cp out application.Main
 pause
-📌 Place run.bat at the project root and double-click it to run the app (edit the JavaFX path if needed).
+```
 
-👩‍💻 Developer
-Matanki S K
-Crafted with care to deliver a seamless and engaging quiz experience.
+Save this in the root of your project as `run.bat`.
 
+---
+
+## 👤 Author
+
+**MATANKI S K**
